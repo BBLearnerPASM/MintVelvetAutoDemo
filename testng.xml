@@ -4,10 +4,10 @@
     <listeners>
         <listener class-name="com.mintvelvet.listeners.TestListener"/>
     </listeners>
-    <test parallel="methods" thread-count="2" name="CoreMintValvet">
+    <test parallel="methods" thread-count="1" name="CoreMintValvet">
         <classes>
-            <class name="com.mintvelvet.test.LoginTest"/>
             <class name="com.mintvelvet.test.SearchTest"/>
+            <class name="com.mintvelvet.test.CheckOutTest"/>
         </classes>
     </test>
 </suite>

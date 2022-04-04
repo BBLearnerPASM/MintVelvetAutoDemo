@@ -9,5 +9,7 @@ public interface FrameworkConfig extends Config {
     String url();
     String chromebinarypath();
     String browser();
+    String runmode();
+    String remoteurl();
 
 }

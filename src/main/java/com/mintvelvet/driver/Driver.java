@@ -2,6 +2,7 @@ package com.mintvelvet.driver;
 
 import com.mintvelvet.config.ConfigFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import lombok.SneakyThrows;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,10 +21,11 @@ public final class Driver {
 
 
 
+    @SneakyThrows
     public static void initDriver(){
 
 
-            WebDriver driver = DriverFactory.getDriver(ConfigFactory.getConfig().browser());
+            WebDriver driver = DriverFactory.getDriver( ConfigFactory.getConfig().browser());
             DriverManager.setDriver(driver);
             DriverManager.getDriver().manage().window().maximize();
             DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigFactory.getConfig().timeout()));

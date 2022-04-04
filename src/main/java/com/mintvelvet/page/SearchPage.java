@@ -2,12 +2,16 @@ package com.mintvelvet.page;
 
 import com.mintvelvet.utils.SeleniumUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class SearchPage {
 
     private static final By TXT_SEARCH_BOX =By.xpath("//input[@id='boost-pfs-search-box-style3']");
     public static final By ICON_SEARCH =By.xpath("//button[@class='boost-pfs-search-submit-style3']");
     public static final By HEADER_SEARCH_TITLE =By.xpath("//h2[@class='title section-title']");
+    public static final String PRODUCT_ITEM_BY_NAME ="Black Bootcut Jeans";
+
+
 
     public SearchPage clickTextSearchBox(){
         //DriverManager.getDriver().findElement(TXT_SEARCH_BOX).click();
@@ -38,4 +42,10 @@ public class SearchPage {
         return SeleniumUtils.getText(HEADER_SEARCH_TITLE,"header_search_tile");
     }
 
+    public ProductDetailsPage clickProductByName(String PRODUCT_ITEM_BY_NAME) {
+
+        SeleniumUtils.click(SeleniumUtils.getProductItemByName(PRODUCT_ITEM_BY_NAME),"Black Bootcut Jeans");
+        //DriverManager.getDriver().findElement(PRODUCT_ITEM_BY_NAME).click();
+        return new ProductDetailsPage();
+    }
 }

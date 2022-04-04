@@ -7,33 +7,36 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class DriverFactory {
 
 
-    public static WebDriver getDriver (String browserName) {
+    public static WebDriver getDriver (String browserName) throws MalformedURLException
+    {
         WebDriver driver = null;
 
-        if (browserName.equalsIgnoreCase("chrome"))
-        {
-            ChromeOptions options = new ChromeOptions();
-            options.setBinary(ConfigFactory.getConfig().chromebinarypath());
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver(options);
-        }
-        else if(browserName.equalsIgnoreCase("firefox"))
-        {
-            WebDriverManager.firefoxdriver().setup();
-            driver=new FirefoxDriver();
-        }
-        else if(browserName.equalsIgnoreCase("edge"))
-        {
-            WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
+
+
+            if (browserName.equalsIgnoreCase("chrome")) {
+                ChromeOptions options = new ChromeOptions();
+                options.setBinary(ConfigFactory.getConfig().chromebinarypath());
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver(options);
+            } else if (browserName.equalsIgnoreCase("firefox")) {
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+            } else if (browserName.equalsIgnoreCase("edge")) {
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
+            }
+        return driver;
         }
 
-        
-        return driver;
     }
 
-}
+

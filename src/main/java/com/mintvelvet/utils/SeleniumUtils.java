@@ -100,4 +100,14 @@ public class SeleniumUtils {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
+
+
+
+
+    public static By getProductItemByName(String productName){
+        return By.xpath("//a[normalize-space()='"+productName+"']");
+    }
+
+
+
 }
