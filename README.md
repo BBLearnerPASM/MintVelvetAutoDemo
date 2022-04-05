@@ -3,12 +3,12 @@
 
 **Framework highlights**
 
--1         Webdriver Selenium
-- 2        TestNG as the unit testing framework
-*3         Extended Report
-*4         Parallel Run
-*5         Page Object Model
-*6         Multi-browser run
+- Webdriver Selenium
+- TestNG as the unit testing framework
+- Extended Report
+- Parallel Run
+- Page Object Model
+- Multi-browser run
  
 ##This framework can be extended to##
 - Code Coverage usign sonarqube/ jacoco
