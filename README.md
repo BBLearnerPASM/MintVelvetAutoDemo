@@ -10,7 +10,7 @@
 - Page Object Model
 - Multi-browser run
  
-##This framework can be extended to##
+**This framework can be extended to**
 - Code Coverage usign sonarqube/ jacoco
 - Integrated with Docker for multi-browser and OS compatibility testing
 - Integrated with mobile testing
