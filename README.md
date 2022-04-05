@@ -1,6 +1,7 @@
 # MintVelvetAutoDemo
-Mint Velvet Automation Demo
-Framework highlights
+## Mint Velvet Automation Demo
+
+**Framework highlights**
 ·         Webdriver Selenium
 ·         TestNG as the unit testing framework
 ·         Extended Report
@@ -15,5 +16,5 @@ This framework can be extended to
 4 ) Integrated with Jenkin CI/CD pipelines
 5 ) API testing using RestAssure libraries
  
-You can also view the demo in the below link
-https://www.youtube.com/watch?v=wna8D5d_JiQ&ab_channel=Bharathibabu
+[ You can also view the demo in the below link ]
+(https://www.youtube.com/watch?v=wna8D5d_JiQ&ab_channel=Bharathibabu)
