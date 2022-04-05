@@ -1,5 +1,5 @@
 # MintVelvetAutoDemo
-## Mint Velvet Automation Demo ##
+## Mint Velvet Automation Demo
 
 **Framework highlights**
 1         Webdriver Selenium
