@@ -2,12 +2,12 @@
 ## Mint Velvet Automation Demo
 
 **Framework highlights**
--1         Webdriver Selenium
--2         TestNG as the unit testing framework
--3         Extended Report
--4         Parallel Run
--5         Page Object Model
--6         Multi-browser run
+*1         Webdriver Selenium
+*2         TestNG as the unit testing framework
+*3         Extended Report
+*4         Parallel Run
+*5         Page Object Model
+*6         Multi-browser run
  
 ##This framework can be extended to##
 - Code Coverage usign sonarqube/ jacoco
