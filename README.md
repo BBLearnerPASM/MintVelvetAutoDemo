@@ -1,10 +1,10 @@
 # MintVelvetAutoDemo
 ## Mint Velvet Automation Demo
 
-**Framework highlights
+**Framework highlights**
 
-*1         Webdriver Selenium
-*2         TestNG as the unit testing framework
+-1         Webdriver Selenium
+- 2        TestNG as the unit testing framework
 *3         Extended Report
 *4         Parallel Run
 *5         Page Object Model
